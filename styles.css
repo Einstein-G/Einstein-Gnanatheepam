@@ -403,3 +403,18 @@ footer {
         font-size: 2rem;
     }
 }
+
+/* Fix bullet alignment in Education section */
+.education ul {
+    list-style-position: outside;
+    padding-left: 20px;
+}
+
+.education li {
+    display: list-item;
+    margin-bottom: 1em;
+}
+
+.education li > div {
+    display: inline-block;
+}
