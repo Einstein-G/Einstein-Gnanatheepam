@@ -404,17 +404,23 @@ footer {
     }
 }
 
-/* Fix bullet alignment in Education section */
-.education ul {
-    list-style-position: outside;
-    padding-left: 20px;
+.edu-list {
+    list-style: none;
+    padding-left: 0;
 }
 
-.education li {
-    display: list-item;
-    margin-bottom: 1em;
+.edu-list li {
+    position: relative;
+    padding-left: 1.2em;
+    margin-bottom: 1.5em;
 }
 
-.education li > div {
-    display: inline-block;
+.edu-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0.3em;
+    color: #2c3e50;
+    font-size: 1.2em;
+    line-height: 1;
 }
